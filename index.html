@@ -25,16 +25,16 @@
     </header>
 
     <div class="background">
-      <div class="logoContainer">
+      <!-- <div class="logoContainer">
         <img class="logo" src="Assets/logo.png" alt="Whear logo">
 
-      </div>
+      </div> -->
 
 
 
       <main class="formMain">
 
-        <form class="formContainer col s12">
+        <form class="formContainer col s12 z-depth-5">
 
           <div class="row">
             <div class="col s12 z-depth-5">
@@ -46,8 +46,8 @@
           </div>
 
           <div class="row">
-            <div class="col s12" z-depth-5="z-depth-5">
-              <label for="subEventSelect">Event Type</label>
+            <div class="col s12 " z-depth-5="z-depth-5">
+              <label for="formLabel subEventSelect">Event Type</label>
               <select class="subEventSelect browser-default" name="subEventSelect">
                 <option value="" disabled="disabled" selected="selected">Choose event style</option>
                 <option value="Formal">Formal</option>
@@ -58,9 +58,9 @@
 
           <div class="row center-align">
             <div class="faceURL input-field col s12" name="faceURL">
-              <label class="faceURLPadding" for="faceURLInput">Profile Picture</label>
+              <label class="faceURLPadding " for="faceURLInput">Profile Picture</label>
               <input placeholder="Upload an image" id="faceURLInput" name="faceURL" type="text" class="validate">
-              <button class="btn waves-effect waves-light blue darken-2 z-depth-5" type="submit" name="action">Submit</button>
+              <button class="btn waves-effect waves-light pulse light-blue darken-4 z-depth-5" type="submit" name="action">Submit</button>
             </div>
           </div>
 
