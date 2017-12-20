@@ -42,11 +42,17 @@ display: flex;
 
 h6 {
   margin-top: 100px;
-  margin-left: 150px;
   font-size: 30px;
   font-weight: 900;
   color:black;
   /* background-color: #D3D3D3; */
+}
+
+
+
+h2 {
+  color:black;
+  /* background-color: white; */
 }
 
 .sumbitButtonContainer {

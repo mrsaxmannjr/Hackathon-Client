@@ -21,42 +21,33 @@
 <body>
 
 
-
   <header class="z-depth-5">
     <img class="logoImage" src="assets/logo.png" alt=""> Where.com
   </header>
 
-  <div class="placeholderImageContainer">
-    <img class="carouselFace z-depth-5" src="http://via.placeholder.com/40x40">
-  </div>
-  <br />
-  <div class="carousel carouselTop">
-    <h6>Select a Top:</h6>
-    <a class="carousel-item modal-trigger" href="#modal1"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href="#modal2"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href="#modal3"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href="#modal4"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href="#modal5"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
 
-  </div>
-  <div class="carousel carouselBottom">
-    <h6>Select a Bottom:</h6>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-  </div>
-  <div class="carousel carouselShoes">
-    <h6>Select Shoes:</h6>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
-    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+  <br />
+  <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+    </div>
+    <div class="carousel-item white-text" href="#one!">
+      <h2>Select a Top:</h2>
+      <a class="btn waves-effect white grey-text darken-text-2 modal-trigger" href="#modal1">Item Details</a>
+    </div>
+    <div class="carousel-item white-text" href="#two!">
+      <a class="btn waves-effect white grey-text darken-text-2 modal-trigger" href="#modal1">Item Details</a>
+    </div>
+    <div class="carousel-item white-text" href="#three!">
+      <p class="white-text">This is your third panel</p>
+      <a class="btn waves-effect white grey-text darken-text-2 modal-trigger" href="#modal1">Item Details</a>
+    </div>
+    <div class="carousel-item white-text" href="#four!">
+      <p class="white-text">This is your fourth panel</p>
+      <a class="btn waves-effect white grey-text darken-text-2 modal-trigger" href="#modal1">Item Details</a>
+    </div>
   </div>
   <div class="sumbitButtonContainer">
-    <button class="saveButton btn waves-effect waves-light blue darken-2"><a href="#">SAVE OUTFIT</a></button>
+    <button class="saveButton btn waves-effect waves-light blue darken-2"><a href="">SAVE OUTFIT</a></button>
   </div>
   <br />
 
@@ -66,11 +57,21 @@
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h2 class="itemBrand">Item Brand </h2>
+      <h3 class="itemName">Item Name</h3>
+      <p class="itemDesc">Item Desc.</p>
+      <ul>
+        <li class="itemPrice">Price</li>
+        <li class="itemSize">Item Size</li>
+        <li class="itemColor">Color</li>
+        <li class="itemStoreName">Store Name</li>
+      </ul>
+      <img class="itemImage" src="">Display Item Image</img>
+      <br />
+      <a class="itemWebsite" href="">Item Site</a>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save Item</a>
     </div>
   </div>
 
@@ -95,7 +96,13 @@
     $(document).ready(function() {
       $('.carousel').carousel();
     });
-
+  </script>
+  <script>
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true
+    });
+  </script>
+  <script>
     $(document).ready(function() {
       // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
       $('.modal').modal();
