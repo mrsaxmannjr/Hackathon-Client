@@ -41,8 +41,7 @@ display: flex;
 
 
 .carouselImage {
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 200px;
 }
 
 
@@ -80,4 +79,36 @@ footer {
 
 .btn {
   z-index: 999999;
+}
+
+
+.carouselTop {
+  background: url("/Assets/bg.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carouselBottom {
+  background: url("/Assets/bg.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carouselShoes {
+  background: url("/Assets/bg.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+img, a {
+  display: block;
 }
