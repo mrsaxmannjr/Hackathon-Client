@@ -35,14 +35,14 @@ display: flex;
 }
 
 
-.carousel {
-  max-height: 200px;
-}
+/* .carousel {
+  height: 200px;
+} */
 
 
 .carouselImage {
   height: 200px;
-  width: auto;
+  width: 200px;
 }
 
 
