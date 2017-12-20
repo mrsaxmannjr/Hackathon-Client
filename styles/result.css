@@ -22,7 +22,7 @@ header {
 
 }
 
-.placeholderImageContainer {
+.facePlaceholderContainer {
     padding-top: 10px;
 justify-content: center;
 display: flex;
@@ -34,7 +34,7 @@ display: flex;
 }
 
 
-.carouselImages {
+.carouselImage {
   max-height: 100px;
   max-width: 100px;
 }
