@@ -16,7 +16,7 @@ main {
 
 header {
   height: 8vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
 }
@@ -70,7 +70,7 @@ h2 {
 
 footer {
   height: 8vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
   justify-content: center;
