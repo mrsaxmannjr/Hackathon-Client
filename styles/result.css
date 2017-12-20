@@ -1,9 +1,16 @@
 header {
-  height: 10vh;
-  background-color: black;
-  color:white;
+  height: 8vh;
+  background-color: #D3D3D3;
+  color:black;
+  position: sticky;
 }
 
+.logoImage {
+  padding-top: 5px;
+  max-width: 50px;
+  max-height: 50px;
+
+}
 
 .placeholderImageContainer {
     padding-top: 10px;
@@ -22,8 +29,12 @@ display: flex;
   justify-content: center;
   display: flex;
 }
-
-
-/* h6 {
-  margin-right: 20px;
-} */
+footer {
+  height: 8vh;
+  background-color: #D3D3D3;
+  color:black;
+  position: sticky;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
