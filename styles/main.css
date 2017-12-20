@@ -53,15 +53,15 @@ h3{
 }
 
 .formContainer {
-  margin-top: 6rem;
+  margin-top: 7rem;
   background-color: #4B6150;
   border-radius: 15%;
   padding: 1rem;
 }
 
-.formLabel {
-  padding-bottom: 5rem;
-  background-color: white;
+label {
+ font-size: 18px;
+ color: white;
 }
 
 .brochure{
