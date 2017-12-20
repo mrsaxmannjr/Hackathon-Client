@@ -15,51 +15,75 @@
   <link rel="stylesheet" href="./styles/result.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="utf-8">
-  <title>result page</title>
+  <title>r</title>
 </head>
-<body>
-  <header>
-    <img class="logoImage" src="assets/logo.png" alt=""> Where.com
 
+<body>
+
+
+
+  <header class="z-depth-5">
+    <img class="logoImage" src="assets/logo.png" alt=""> Where.com
   </header>
 
   <div class="placeholderImageContainer">
-    <img src="http://via.placeholder.com/40x40">
+    <img class="carouselFace z-depth-5" src="http://via.placeholder.com/40x40">
   </div>
   <br />
   <div class="carousel carouselTop">
     <h6>Select a Top:</h6>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
+    <a class="carousel-item modal-trigger" href="#modal1"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href="#modal2"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href="#modal3"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href="#modal4"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href="#modal5"><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+
   </div>
   <div class="carousel carouselBottom">
     <h6>Select a Bottom:</h6>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
   </div>
   <div class="carousel carouselShoes">
     <h6>Select Shoes:</h6>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
-    <a class="carousel-item" href="#one!"><img src="http://via.placeholder.com/60x60"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
+    <a class="carousel-item" href=""><img class="carouselImages" src="http://via.placeholder.com/40x40"></a>
   </div>
   <div class="sumbitButtonContainer">
-    <button class="saveButton"><a href="#">SAVE OUTFIT</a></button>
+    <button class="saveButton btn waves-effect waves-light blue darken-2"><a href="#">SAVE OUTFIT</a></button>
   </div>
-<br />
-<footer>
-© 2017-18 | JAMES, BJ, SARAH & BEN
-</footer>
+  <br />
 
 
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <footer>
+    © 2017-18 | JAMES, BJ, SARAH & BEN
+  </footer>
   <script src="./src/result.js" charset="utf-8"></script>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -70,6 +94,11 @@
   <script>
     $(document).ready(function() {
       $('.carousel').carousel();
+    });
+
+    $(document).ready(function() {
+      // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+      $('.modal').modal();
     });
   </script>
 </body>
