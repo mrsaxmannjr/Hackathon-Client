@@ -41,7 +41,7 @@ display: flex;
 
 
 .carouselImage {
-  max-height: 200px;
+  height: 200px;
   width: auto;
 }
 
