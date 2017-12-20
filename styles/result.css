@@ -42,6 +42,7 @@ display: flex;
 
 .carouselImage {
   max-height: 200px;
+  width: auto;
 }
 
 
@@ -81,7 +82,7 @@ footer {
   z-index: 999999;
 }
 
-
+/*
 .carouselTop {
   background: url("/Assets/bg.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
@@ -104,7 +105,7 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 
 
 
