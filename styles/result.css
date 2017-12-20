@@ -109,8 +109,15 @@ footer {
 } */
 
 
-/* 
+/*
 
 img, a {
   display: block;
 } */
+
+
+
+.facePlaceholder {
+  max-height: 100px;
+  max-width: 100px;
+}
