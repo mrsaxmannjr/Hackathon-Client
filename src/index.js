@@ -18,7 +18,7 @@ function postData() {
     })
   })
     .then(response => response.json())
-    .then((response) => response)
+    .then((response) => console.log(response))
     .catch(err => console.log(err));
 }
 
@@ -30,12 +30,12 @@ document.querySelector(".formContainer").addEventListener("submit", event => {
 function getFormData() {
   var data = new FormData(document.querySelector(".formContainer"));
   console.log({
-    event: data.get("eventSelect"),
+    eventName: data.get("eventSelect"),
     subEvent: data.get("subEventSelect"),
     faceURL: data.get("faceURL")
   });
   return {
-    event: data.get("eventSelect"),
+    eventName: data.get("eventSelect"),
     subEvent: data.get("subEventSelect"),
     faceURL: data.get("faceURL")
   };
