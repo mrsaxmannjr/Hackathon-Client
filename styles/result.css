@@ -4,6 +4,11 @@ header {
   color:white;
 }
 
+.logoImage {
+  max-width: 100px;
+  max-height: 100px;
+
+}
 
 .placeholderImageContainer {
     padding-top: 10px;
