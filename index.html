@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!--Import Google Icon Font-->
+
+<head>
+  <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -10,39 +11,42 @@
 
   <!--Let browser know website is optimized for mobile-->
   <link rel="stylesheet" href="./styles/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8">
-    <title>What to Whear</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>What to Whear</title>
+</head>
 
-  <body>
-<div class="logo"></div>
+<body>
+  <div class="logo"></div>
 
-    <form class="formContainer">
-        <label for="eventSelect">Event</label>
-                     <select class = "eventSelect browser-default " name="eventSelect">
-                        <option value = "" disabled selected>Events</option>
+  <form class="formContainer">
+    <label for="eventSelect">Event</label>
+    <select class="eventSelect" name="eventSelect">
+    <option value = "test" disabled selected>Events</option>
                      </select>
-                  </div>
-                    <label for="subEventSelect">Event Type</label>
-                                 <select class = "subEventSelect browser-default" name="subEventSelect">
+
+    </div>
+
+    <label for="subEventSelect">Event Type</label>
+    <select class="subEventSelect browser-default" name="subEventSelect">
                                     <option value = "" disabled selected>Choose event style</option>
                                     <option value="Formal">Formal</option>
                                     <option value="Informal">Informal</option>
 
                                  </select>
-                              </div>
-                              <div class="faceURL input-field" name="faceURL">
-              <input placeholder="Upload an image" id="faceURLInput" name="faceURL" type="text" class="validate">
-              <label for="faceURLInput">Profile Picture</label>
-              <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Submit</button>
-            </div>
-    </form>
-    <script src="./src/index.js" charset="utf-8"></script>
-    <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-      <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-  </body>
+    </div>
+    <div class="faceURL input-field" name="faceURL">
+      <input placeholder="Upload an image" id="faceURLInput" name="faceURL" type="text" class="validate">
+      <label for="faceURLInput">Profile Picture</label>
+      <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Submit</button>
+    </div>
+  </form>
+  <script src="./src/index.js" charset="utf-8"></script>
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+</body>
+
 </html>
