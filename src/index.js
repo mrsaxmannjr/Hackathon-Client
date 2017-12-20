@@ -1,8 +1,16 @@
 const baseURL = "https://whispering-inlet-64006.herokuapp.com/";
 
+for (let i = 0; i < events.length; i++) {
+  var newOption = document.createElement("option");
+  newOption.textContent = events[i];
+  newOption.value = events[i];
+  document.querySelector("eventSelect").appendChild(newOption);
+}
+
 fetch(baseURL)
   .then(response => response.json())
-  .then(response => console.log(response))
+  .then(response => {
+  })
   .catch(err => console.log(err));
 
 fetch(baseURL,  {
