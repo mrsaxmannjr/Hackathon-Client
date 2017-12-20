@@ -1,5 +1,15 @@
-/* .formContainer {
+.logo {
+  height: 100px;
+  width: auto;
+}
+main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-} */
+  /* flex-direction: column; */
+}
+
+
+
+.formContainer {
+  /* max-width: 400px; */
+}
