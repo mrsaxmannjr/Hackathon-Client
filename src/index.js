@@ -10,7 +10,7 @@ for (let i = 0; i < events.length; i++) {
 }
 
 function postData() {
-  fetch(baseURL + "/selection", {
+  fetch(baseURL + "selection", {
     method: "post",
     body: JSON.stringify(getFormData()),
     headers: new Headers({
@@ -18,7 +18,7 @@ function postData() {
     })
   })
     .then(response => response.json())
-    .then((response) => console.log(response))
+    .then(response => console.log(response))
     .catch(err => console.log(err));
 }
 

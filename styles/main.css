@@ -1,3 +1,8 @@
+body {
+  background-image: 
+  background: lightblue url(“img_tree.gif”) no-repeat fixed center;
+}
+
 header {
   height: 8vh;
   background-color: #D3D3D3;
