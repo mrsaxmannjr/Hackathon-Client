@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
 .background {
   background: url("/Assets/bg.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 84vh;
+  height: 82vh;
 }
 
 header {
-  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 12vh;
   background-color: #D3D3D3;
   color:black;
   position: sticky;
@@ -24,6 +29,22 @@ header {
   width: auto;
   margin-top: 2rem;
   margin-bottom: 7rem;
+}
+
+h2{
+  display:flex;
+  justify-content: space-around;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+h3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 6rem;
+  font-family: 'Berkshire Swash', cursive;
 }
 
 .formMain {
@@ -45,13 +66,14 @@ header {
 
 
 .logoImage {
-  padding-top: 5px;
-  max-width: 50px;
-  max-height: 50px;
+  display: flex;
+  padding: 0.2rem;
+  max-width: 170px;
+  height: auto;
 }
 
 footer {
-  height: 8vh;
+  height: 6vh;
   background-color: #D3D3D3;
   color:black;
   position: sticky;
