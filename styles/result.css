@@ -8,6 +8,12 @@ body {
 }
 
 
+
+main {
+  /* padding-right: 50px; */
+}
+
+
 header {
   height: 8vh;
   background-color: #D3D3D3;
@@ -60,6 +66,7 @@ h2 {
   justify-content: center;
   display: flex;
 }
+
 footer {
   height: 8vh;
   background-color: #D3D3D3;
