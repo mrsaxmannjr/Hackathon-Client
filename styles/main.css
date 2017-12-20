@@ -14,7 +14,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   height: 12vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
 }
@@ -59,10 +59,7 @@ h3{
   padding: 1rem;
 }
 
-.formLabel {
-  padding-bottom: 5rem;
-  background-color: white;
-}
+
 
 
 .logoImage {
@@ -74,7 +71,7 @@ h3{
 
 footer {
   height: 6vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
   justify-content: center;
