@@ -76,3 +76,8 @@ footer {
   display: flex;
   align-items: center;
 }
+
+
+.btn {
+  z-index: 999999;
+}
