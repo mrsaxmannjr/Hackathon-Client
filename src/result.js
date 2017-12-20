@@ -29,10 +29,8 @@ fetch(`${baseURL}clothes`)
     for (let i = 0; i < matches.length; i++) {
       if (matches[i].type == "Top") {
         if (
-          document.querySelector(".carouselImageTop1").style.backgroundImage ===
-          ""
-        ) {
-          document.querySelector(".carouselImageTop1").style.backgroundImage =
+          document.querySelector(".carouselImageTop1").src === "") {
+          document.querySelector(".carouselImageTop1").src =
             matches[i].img;
         } else if (document.querySelector(".carouselImageTop2").src === "") {
           document.querySelector(".carouselImageTop2").src = matches[i].img;
