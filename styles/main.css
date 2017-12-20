@@ -1,6 +1,10 @@
-body {
-  background-image: 
-  background: lightblue url(“img_tree.gif”) no-repeat fixed center;
+html {
+  background: url("Assets/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font: 300 16px/22px "Quicksand", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header {
