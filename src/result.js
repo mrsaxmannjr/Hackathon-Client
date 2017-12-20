@@ -18,7 +18,7 @@ fetch(`${baseURL}clothes`)
     clothesArray.push(response);
     console.log("clothesArray", clothesArray);
     for (let i = 0; i < clothesArray[0].length; i++) {
-      if (clothesArray[0][i].event.includes(selectionArray[0][0].event)) {
+      if (clothesArray[0][i].event.includes(selectionArray[0].event)  && clothesArray[0][i].eventType === selectionArray[0].eventType) {
         matches.push(clothesArray[0][i]);
       }
     }
@@ -26,26 +26,29 @@ fetch(`${baseURL}clothes`)
     for (let i = 0; i < matches.length; i++) {
       var aTag = document.createElement("a");
       var imgTag = document.createElement("img");
+      var divTag = document.createElement("div");
 
-      aTag.classList.add("carousel-item");
+      aTag.classList.add("btn", "waves-effect", "white", "grey-text", "darken-text-2", "modal-trigger");
       aTag.href = "#modal1";
       imgTag.src = matches[i].img;
+      divTag.classList.add("carousel-item", "white-text");
 
-      aTag.appendChild(imgTag);
+      divTag.appendChild(imgTag);
+      divTag.appendChild(aTag);
 
       if (matches[i].type === "Top") {
-        document.querySelector(".carouselTop").appendChild(aTag);
+        document.querySelector(".carouselTop").appendChild(divTag);
       }
       else if (matches[i].type === "Bottom") {
-        document.querySelector(".carouselBottom").appendChild(aTag);
+        document.querySelector(".carouselBottom").appendChild(divTag);
       }
       else if (matches[i].type === "Shoes") {
-        document.querySelector(".carouselShoes").appendChild(aTag);
+        document.querySelector(".carouselShoes").appendChild(divTag);
       }
 
     }
 
-    if (selectionArray[0][0].faceURL !== "") {
+    if (selectionArray[0].faceURL !== "") {
       document.querySelector(".carouselFace").src = selectionArray[0][0].faceURL;
     }
   })
