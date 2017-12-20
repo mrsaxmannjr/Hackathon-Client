@@ -12,29 +12,35 @@
   <link rel="stylesheet" href="./styles/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
-    <title></title>
+    <title>What to Whear</title>
   </head>
 
-  <form class="col s12">
-    <div class = "col s3">
-                   <select class = "eventSelect browser-default">
-                      <option value = "" disabled selected>Events</option>
-
-                   </select>
-                </div>
-                <div class = "col s3">
-                               <select class = "subEventSelect browser-default">
-                                  <option value = "" disabled selected>Formal or Informal</option>
-
-                               </select>
-                            </div>
-                            <div class="faceURL input-field col s6">
-            <input placeholder="Upload an image" id="team_name" name="team_name" type="text" class="validate">
-            <label for="team_name">Team Name</label>
-  </form>
-
-
   <body>
+<div class="logo"></div>
+
+    <form class="formContainer col s12">
+      <div class = "col s3">
+        <label for="eventSelect">Event</label>
+                     <select class = "eventSelect browser-default" name="eventSelect">
+                        <option value = "" disabled selected>Events</option>
+
+                     </select>
+                  </div>
+                  <div class = "col s3">
+                    <label for="subEventSelect">Event Type</label>
+                                 <select class = "subEventSelect browser-default" name="subEventSelect">
+                                    <option value = "" disabled selected>Choose event style</option>
+                                    <option value="">Formal</option>
+                                    <option value="">Informal</option>
+
+                                 </select>
+                              </div>
+                              <div class="faceURL input-field col s6" name="faceURL">
+              <input placeholder="Upload an image" id="faceURLInput" name="team_name" type="text" class="validate">
+              <label for="faceURLInput">Profile Picture</label>
+              <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Submit</button>
+            </div>
+    </form>
     <script src="./src/index.js" charset="utf-8"></script>
     <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
