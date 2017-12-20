@@ -1,15 +1,41 @@
+header {
+  height: 8vh;
+  background-color: #D3D3D3;
+  color:black;
+  position: sticky;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
 .logo {
+
   height: 100px;
   width: auto;
 }
+
 main {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
 }
-
-
 
 .formContainer {
   /* max-width: 400px; */
+}
+
+.logoImage {
+  padding-top: 5px;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+footer {
+  height: 8vh;
+  background-color: #D3D3D3;
+  color:black;
+  position: sticky;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
