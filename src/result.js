@@ -18,38 +18,55 @@ fetch(`${baseURL}clothes`)
     clothesArray.push(response);
     console.log("clothesArray", clothesArray);
     for (let i = 0; i < clothesArray[0].length; i++) {
-      if (clothesArray[0][i].event.includes(selectionArray[0].event)  && clothesArray[0][i].eventType === selectionArray[0].eventType) {
+      if (
+        clothesArray[0][i].event.includes(selectionArray[0].event) &&
+        clothesArray[0][i].eventType === selectionArray[0].eventType
+      ) {
         matches.push(clothesArray[0][i]);
       }
     }
     console.log("matches", matches);
     for (let i = 0; i < matches.length; i++) {
-      var aTag = document.createElement("a");
-      var imgTag = document.createElement("img");
-      var divTag = document.createElement("div");
-
-      aTag.classList.add("btn", "waves-effect", "white", "grey-text", "darken-text-2", "modal-trigger");
-      aTag.href = "#modal1";
-      imgTag.src = matches[i].img;
-      divTag.classList.add("carousel-item", "white-text");
-
-      divTag.appendChild(imgTag);
-      divTag.appendChild(aTag);
-
-      if (matches[i].type === "Top") {
-        document.querySelector(".carouselTop").appendChild(divTag);
+      if (matches[i].type == "Top") {
+        if (
+          document.querySelector(".carouselImageTop1").style.backgroundImage ===
+          ""
+        ) {
+          document.querySelector(".carouselImageTop1").style.backgroundImage =
+            matches[i].img;
+        } else if (document.querySelector(".carouselImageTop2").src === "") {
+          document.querySelector(".carouselImageTop2").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageTop3").src === "") {
+          document.querySelector(".carouselImageTop3").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageTop4").src === "") {
+          document.querySelector(".carouselImageTop4").src = matches[i].img;
+        }
+      } else if (matches[i].type == "Bottom") {
+        if (document.querySelector(".carouselImageBottom1").src === "") {
+          document.querySelector(".carouselImageBottom1").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageBottom2").src === "") {
+          document.querySelector(".carouselImageBottom2").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageBottom3").src === "") {
+          document.querySelector(".carouselImageBottom3").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageBottom4").src === "") {
+          document.querySelector(".carouselImageBottom4").src = matches[i].img;
+        }
+      } else if (matches[i].type == "Shoes") {
+        if (document.querySelector(".carouselImageShoes1").src === "") {
+          document.querySelector(".carouselImageShoes1").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageShoes2").src === "") {
+          document.querySelector(".carouselImageShoes2").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageShoes3").src === "") {
+          document.querySelector(".carouselImageShoes3").src = matches[i].img;
+        } else if (document.querySelector(".carouselImageShoes4").src === "") {
+          document.querySelector(".carouselImageShoes4").src = matches[i].img;
+        }
       }
-      else if (matches[i].type === "Bottom") {
-        document.querySelector(".carouselBottom").appendChild(divTag);
-      }
-      else if (matches[i].type === "Shoes") {
-        document.querySelector(".carouselShoes").appendChild(divTag);
-      }
-
     }
 
     if (selectionArray[0].faceURL !== "") {
-      document.querySelector(".carouselFace").src = selectionArray[0][0].faceURL;
+      document.querySelector(".facePlaceholder").src =
+        selectionArray[0].faceURL;
     }
   })
   .catch(err => console.log(err));
