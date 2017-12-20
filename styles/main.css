@@ -14,7 +14,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   height: 12vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
 }
@@ -64,20 +64,36 @@ h3{
   background-color: white;
 }
 
+.brochure{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2rem;
+  background: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .logoImage {
   display: flex;
   padding: 0.2rem;
-  max-width: 170px;
-  height: auto;
+  height: 100px;
+  width: auto;
 }
 
 footer {
   height: 6vh;
-  background-color: #D3D3D3;
+  background-color: #4B6150;
   color:black;
   position: sticky;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   align-items: center;
+}
+
+.about{
+  font-family: 'Berkshire Swash', cursive;
+}
+
+.description{
+  font-size: 2rem;
+  text-align: center;
 }
