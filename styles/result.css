@@ -43,6 +43,7 @@ display: flex;
 .carouselImage {
   max-height: 200px;
   max-width: 200px;
+
 }
 
 
@@ -108,8 +109,8 @@ footer {
 } */
 
 
-
+/* 
 
 img, a {
   display: block;
-}
+} */
