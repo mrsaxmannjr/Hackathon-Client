@@ -4,7 +4,7 @@ var selectionArray = [];
 var clothesArray = [];
 var matches = [];
 
-fetch(baseURL + "selection")
+fetch(`${baseURL}selection`)
   .then(response => response.json())
   .then(response => {
     selectionArray.push(response);
@@ -12,7 +12,7 @@ fetch(baseURL + "selection")
   })
   .catch(err => console.log(err));
 
-fetch(baseURL + "clothes")
+fetch(`${baseURL}clothes`)
   .then(response => response.json())
   .then(response => {
     clothesArray.push(response);

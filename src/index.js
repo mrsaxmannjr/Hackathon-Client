@@ -1,6 +1,18 @@
 const baseURL = "https://whispering-inlet-64006.herokuapp.com/";
 
-var events = ["Black Tie Event", "Western Themed Party", "Interview", "wedding"];
+var events = [
+  "Wedding",
+  "Job Interview",
+  "Cocktail Party",
+  "Holiday Party",
+  "Conference",
+  "Pitch Presentation",
+  "Meetup",
+  "Bitcoin Investor Party",
+  "Hipster",
+  "Rodeo",
+  "Steam Punk"
+];
 
 for (let i = 0; i < events.length; i++) {
   var newOption = document.createElement("option");
@@ -10,7 +22,7 @@ for (let i = 0; i < events.length; i++) {
 }
 
 function postData() {
-  fetch(baseURL + "selection", {
+  fetch(`${baseURL}selection`, {
     method: "post",
     body: JSON.stringify(getFormData()),
     headers: new Headers({
