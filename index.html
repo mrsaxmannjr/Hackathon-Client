@@ -18,28 +18,29 @@
 
   <body>
 
-    <header>
+    <header class="z-depth-5">
       <img class="logoImage" src="assets/logo.png" alt=""> Where.com
 
     </header>
-    
+
+<div class="background">
 <div class="logoContainer">
   <img class="logo" src="Assets/logo.png" alt="Whear logo">
 
 </div>
 
-<main>
+<main class=formMain>
 
     <form class="formContainer col s12">
 
-      <div class="col s3">
+      <div class="col s3 z-depth-5">
         <label for="eventSelect">Event</label>
         <select class="eventSelect browser-default " name="eventSelect">
           <option value="" disabled="disabled" selected="selected">Events</option>
         </select>
       </div>
 
-      <div class="col s3">
+      <div class="col s3" z-depth-5>
         <label for="subEventSelect">Event Type</label>
         <select class="subEventSelect browser-default" name="subEventSelect">
           <option value="" disabled="disabled" selected="selected">Choose event style</option>
@@ -51,13 +52,13 @@
       <div class="faceURL input-field col s3" name="faceURL">
         <label class="faceURLPadding" for="faceURLInput">Profile Picture</label>
         <input placeholder="Upload an image" id="faceURLInput" name="faceURL" type="text" class="validate">
-        <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Submit</button>
+        <button class="btn waves-effect waves-light blue darken-2 z-depth-5" type="submit" name="action">Submit</button>
       </div>
 
     </form>
     </main>
-
-    <footer>
+</div>
+    <footer class="z-depth-5">
     © 2017-18 | JAMES, BJ, SARAH & BEN
     </footer>
 
