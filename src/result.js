@@ -1,6 +1,12 @@
 const baseURL = "https://whispering-inlet-64006.herokuapp.com/";
 
-fetch(baseURL + "clothes")
+var selectionArray = [];
+
+fetch(baseURL + "/selection")
   .then(response => response.json())
-  .then(response => console.log(response))
+  .then(response => {
+    selectionArray.push(response);
+    console.log(response);
+    console.log(selectionArray);
+  })
   .catch(err => console.log(err))
