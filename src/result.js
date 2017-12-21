@@ -87,11 +87,10 @@ fetch(`${baseURL}clothes`)
               "$" + matches[i].price;
             document.querySelector(".itemSize").textContent =
               matches[i].sizeRange;
-            document.querySelector(".iteColor").textContent = matches[i].color;
-            document.querySelector(".itemStoreName").textContent =
-              matches[i].storeName;
-            document.querySelector(".itemWebsite").textContent =
-              matches[i].website;
+            document.querySelector(".itemColor").textContent = matches[i].color;
+            document.querySelector(".itemStoreName").textContent = matches[i].storeName;
+            document.querySelector(".itemWebsite").textContent = matches[i].website;
+            document.querySelector(".itemImage").src = matches[i].img;
           }
         });
       }
