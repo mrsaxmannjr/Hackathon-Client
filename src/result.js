@@ -1,6 +1,6 @@
 const baseURL = "https://whispering-inlet-64006.herokuapp.com/";
 
-var selectionArray = [];
+var selectionArray = []; 
 var clothesArray = [];
 var matches = [];
 

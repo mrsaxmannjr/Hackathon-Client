@@ -4,7 +4,7 @@ var events = [
   "Wedding",
   "Job Interview",
   "Cocktail Party",
-  "Holiday Party",
+  "Holiday Party", 
   "Conference",
   "Pitch Presentation",
   "Meetup",
