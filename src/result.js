@@ -27,11 +27,23 @@ fetch(`${baseURL}clothes`)
     }
     console.log("matches", matches);
     for (let i = 0; i < matches.length; i++) {
+      // var divTag = document.createElement("div");
+      // var aTag = document.createElement("a");
+      // var imgTag = document.createElement("img");
+      //
+      // divTag.classList.add("carousel-item", "white-text", "active");
+      // imgTag.src = matches[i].img;
+      // aTag.classList.add("btn", "waves-effect", "white", "grey-text", "darken-text-2", "modal-trigger");
+      // aTag.href = "#modal1";
+      // aTag.textContent = "Item Details";
+      //
+      // divTag.appendChild(imgTag);
+      // divTag.appendChild(aTag);
+
       if (matches[i].type == "Top") {
         if (
           document.querySelector(".carouselImageTop1").src === "") {
-          document.querySelector(".carouselImageTop1").src =
-            matches[i].img;
+          document.querySelector(".carouselImageTop1").src = matches[i].img;
         } else if (document.querySelector(".carouselImageTop2").src === "") {
           document.querySelector(".carouselImageTop2").src = matches[i].img;
         } else if (document.querySelector(".carouselImageTop3").src === "") {
@@ -59,6 +71,29 @@ fetch(`${baseURL}clothes`)
         } else if (document.querySelector(".carouselImageShoes4").src === "") {
           document.querySelector(".carouselImageShoes4").src = matches[i].img;
         }
+      }
+      var allButtons = document.querySelectorAll(".btn");
+      for (let j = 0; j < allButtons.length; j++) {
+        allButtons[j].addEventListener("click", event => {
+          var src = event.target.previousElementSibling.src;
+
+          if (matches[i].img === src) {
+            document.querySelector(".itemBrand").textContent = matches[i].brand;
+            document.querySelector(".itemName").textContent =
+              matches[i].itemName;
+            document.querySelector(".itemDesc").textContent =
+              matches[i].description;
+            document.querySelector(".itemPrice").textContent =
+              "$" + matches[i].price;
+            document.querySelector(".itemSize").textContent =
+              matches[i].sizeRange;
+            document.querySelector(".iteColor").textContent = matches[i].color;
+            document.querySelector(".itemStoreName").textContent =
+              matches[i].storeName;
+            document.querySelector(".itemWebsite").textContent =
+              matches[i].website;
+          }
+        });
       }
     }
 
